@@ -1,0 +1,28 @@
+.mesa
+{
+    height: 800px;
+    width: 800px;
+    border: solid;
+}
+
+.posicaoCarta
+{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    height: 400px;
+    width: 300px;
+    border: dotted; 
+}
+
+.carta
+{
+    height: 80%;
+    width: 100%;
+}
+
+.carta :hover
+{
+    background-color: violet;
+    
+}
