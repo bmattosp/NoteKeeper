@@ -1,3 +1,8 @@
+:root
+{
+  --primeiraPosicao: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,28 +12,39 @@
 body {
   height: 100vh;
   display: flex;
-  background: #060AB2;
+  background: purple;
 }
 
   
 .mesa{
-  width: 640px;
-  height: 640px;
+  width: 2000px;
+  height: 200px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   perspective: 1000px;
 }
 
 .posicaoCarta {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
+  width: calc(100%);
+  /* height: calc(33.333% - 10px); */
+  height: calc(100% - 10px);
+  margin-left: -10px;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  box-shadow: 30px 5px 5px rgba(0,0,0,.3);
+  border-bottom: 5px;
+  border-top: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  border-color: green;
+}
+
+.posicaoCarta:hover {
+  transform: scale(1.3);
+  transition: transform .2s;
 }
 
 .posicaoCarta:active {
@@ -44,7 +60,6 @@ body {
 .carta-verso {
   width: 100%;
   height: 100%;
-
   position: absolute;
   border-radius: 5px;
   background: #1C7CCC;
