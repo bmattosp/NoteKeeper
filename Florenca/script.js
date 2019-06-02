@@ -4,6 +4,42 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+function posicionarCartas()
+{
+  var razaoCartaTarot = 0.65;
+  var posicoes = $('.posicaoCarta');
+  var tamanhoMesaLargura = $('.mesa').width();
+  var tamanhoMesaAltura = $('.mesa').height();
+  var alturaCarta = tamanhoMesaAltura;
+  var larguraCarta = tamanhoMesaAltura * razaoCartaTarot;
+  var numeroCartasQueCabem = tamanhoMesaLargura/larguraCarta;
+  var sobrePosicao = 1 - (numeroCartasQueCabem/posicoes.length);
+  var anterior = 0;
+  $.each(posicoes,  
+      function(i)
+      {
+        // if((anterior + larguraCarta + ( larguraCarta - (sobrePosicao * larguraCarta)) > tamanhoMesaLargura))
+        // {
+        //   $(this).css({"display": "none"});
+        //   return;
+        // }
+
+        var leftPos = (anterior+larguraCarta - (larguraCarta*sobrePosicao));
+        $(this).css({"left": leftPos.toString() + "px", "width": larguraCarta.toString() + "px", "height":alturaCarta.toString() + "px" });
+
+        anterior = $(this).position().left; 
+
+      }
+
+  );
+}
+
+function selectCard() {
+  
+   $(".selecionados").html( $(this).html());
+
+}
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -60,4 +96,4 @@ function resetBoard() {
   });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('click', selectCard));
