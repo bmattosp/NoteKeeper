@@ -33,7 +33,7 @@ body {
   border-style: solid;
 }
 
-.posicaoCarta {
+.posicaoCarta, .posicaoCartaSelect {
   width: calc(100% / 21);
   /* height: calc(33.333% - 10px); */
   height: calc(100% - 10px);
