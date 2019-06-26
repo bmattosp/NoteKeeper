@@ -2,39 +2,42 @@
 <html lang="en">
 
 <head>
-  <script src="../Florenca/node_modules/jquery/dist/jquery.js"></script>
-  <script>
-    $(document).ready(function () {
-      posicionarCartas();
-    });
-  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>Tarot da Juliana</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="selecionados">
-      <div class="posicaoCartaSelect" id="select1">
-      </div>
-      <div class="posicaoCartaSelect" id="select2">
-      </div>
-      <div class="posicaoCartaSelect" id="select3">
-      </div>
-      <div class="posicaoCartaSelect" id="select4">
-      </div>
-      <div class="posicaoCartaSelect" id="select5">
-      </div>
-      <div class="posicaoCartaSelect" id="select6">
-      </div>
-      <div class="posicaoCartaSelect" id="select7">
-      </div>
-      <div class="posicaoCartaSelect" id="select8">
-      </div>
-    </section>
+  <div>
+    <h1>Tarot da Juliana</h1>
+  </div>
+  <div>
+    <input id="btnReset" type="button" value="reset">
+  </div>
+  <section class="selecionados">
+    <div class="posicaoCartaSelect" id="select1">
+    </div>
+    <div class="posicaoCartaSelect" id="select2">
+    </div>
+    <div class="posicaoCartaSelect" id="select3">
+    </div>
+    <div class="posicaoCartaSelect" id="select4">
+    </div>
+    <div class="posicaoCartaSelect" id="select5">
+    </div>
+    <div class="posicaoCartaSelect" id="select6">
+    </div>
+    <div class="posicaoCartaSelect" id="select7">
+    </div>
+    <div class="posicaoCartaSelect" id="select8">
+    </div>
+  </section>
   <section class="mesa">
     <div class="posicaoCarta" data-framework="aurelia">
       <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
@@ -122,64 +125,83 @@
       <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
     </div>
     <div class="posicaoCarta" data-framework="aurelia">
-        <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-        <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-      </div>
-      <div class="posicaoCarta" data-framework="aurelia">
-          <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-          <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-        </div>
-        <div class="posicaoCarta" data-framework="aurelia">
-            <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-            <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-          </div>
-          <div class="posicaoCarta" data-framework="aurelia">
-              <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-              <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-            </div>
-            <div class="posicaoCarta" data-framework="aurelia">
-                <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-              </div>
-              <div class="posicaoCarta" data-framework="aurelia">
-                  <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                  <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                </div>
-                <div class="posicaoCarta" data-framework="aurelia">
-                    <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                    <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                  </div>
-                  <div class="posicaoCarta" data-framework="aurelia">
-                      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                    </div>
-                    <div class="posicaoCarta" data-framework="aurelia">
-                        <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                        <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                      </div>
-                      <div class="posicaoCarta" data-framework="aurelia">
-                          <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                          <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                        </div>
-                        <div class="posicaoCarta" data-framework="aurelia">
-                            <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                            <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                          </div>
-                          <div class="posicaoCarta" data-framework="aurelia">
-                              <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                              <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                            </div>
-                            <div class="posicaoCarta" data-framework="aurelia">
-                                <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                                <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                              </div>
-                              <div class="posicaoCarta" data-framework="aurelia">
-                                  <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
-                                  <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
-                                </div>
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
+    <div class="posicaoCarta" data-framework="aurelia">
+      <img class="carta-frente" src="mg-00.jpg" alt="Aurelia" />
+      <img class="carta-verso" src="mg-dorso.jpg" alt="JS Badge" />
+    </div>
   </section>
 
+
+  <script src="../Florenca/node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      resetaJogo();
+      Inicializa();
+    });
+
+    function Inicializa() {
+      $("#btnReset").click(resetaJogo())
+    }
+  </script>
+
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

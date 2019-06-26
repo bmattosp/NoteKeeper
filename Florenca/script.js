@@ -5,16 +5,35 @@ let lockBoard = false;
 let firstCard, secondCard;
 let alturaCarta, larguraCarta;
 
-function posicionarCartas()
+let razaoCartaTarot = 0;
+let posicoes = 0;
+let tamanhoMesaLargura = 0;
+let tamanhoMesaAltura = 0;
+let numeroCartasQueCabem = 0;
+let sobrePosicao = 0;
+
+
+
+function resetaJogo()
 {
-  var razaoCartaTarot = 0.65;
-  var posicoes = $('.posicaoCarta');
-  var tamanhoMesaLargura = $('.mesa').width();
-  var tamanhoMesaAltura = $('.mesa').height();
+  calculaVariaveis();
+  posicionarCartas();
+}
+
+function calculaVariaveis()
+{
+  razaoCartaTarot = 0.65;
+  posicoes = $('.posicaoCarta');
+  tamanhoMesaLargura = $('.mesa').width();
+  tamanhoMesaAltura = $('.mesa').height();
   alturaCarta = tamanhoMesaAltura;
   larguraCarta = tamanhoMesaAltura * razaoCartaTarot;
-  var numeroCartasQueCabem = tamanhoMesaLargura/larguraCarta;
-  var sobrePosicao = 1 - (numeroCartasQueCabem/posicoes.length);
+  numeroCartasQueCabem = tamanhoMesaLargura/larguraCarta;
+  sobrePosicao = 1 - (numeroCartasQueCabem/posicoes.length);
+}
+
+function posicionarCartas()
+{
   var anterior = 0;
   $.each(posicoes,  
       function(i)
