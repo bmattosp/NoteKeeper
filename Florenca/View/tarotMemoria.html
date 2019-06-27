@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <meta charset="UTF-8">
+
+  <title>Tarot da Juliana</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center border">
+      <h1>Tarot da Juliana</h1>
+    </div>
+    <div class="row">
+      <input class="btn btn-success" id="btnReset" type="button" value="reset">
+    </div>
+    <div class="row">
+      <section class="selecionados">
+        <div class="posicaoCarta posicaoCartaSelect" id="select1">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select2">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select3">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select4">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select5">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select6">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select7">
+        </div>
+        <div class="posicaoCarta posicaoCartaSelect" id="select8">
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <section class="mesa">
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+
+        <div class="posicaoCarta" data-framework="vue">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Vue" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="vue">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Vue" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+
+        <div class="posicaoCarta" data-framework="angular">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Angular" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="angular">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Angular" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+
+        <div class="posicaoCarta" data-framework="ember">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Ember" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="ember">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Ember" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+
+        <div class="posicaoCarta" data-framework="backbone">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Backbone" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="backbone">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Backbone" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+
+        <div class="posicaoCarta" data-framework="react">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="React" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="react">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="React" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+        <div class="posicaoCarta" data-framework="aurelia">
+          <img class="carta-frente" src="..\img\mg-00.jpg" alt="Aurelia" />
+          <img class="carta-verso" src="..\img\mg-dorso.jpg" alt="JS Badge" />
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      resetaJogo();
+      Inicializa();
+    });
+
+    function Inicializa() {
+      $("#btnReset").click(resetaJogo())
+    }
+  </script>
+
+  <script src="tarotMemoria.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
